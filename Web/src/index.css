@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #75fb92;
+  --color-on-primary: #1c3533;
+  --color-background: #1c3533;
+  --color-surface: #1c3533;
+  --color-on-surface: #fefefe;
+  --color-surface-container-low: #162b29;
+  --color-surface-container: #112220;
+  --color-surface-container-high: #23423f;
+  --color-surface-container-highest: #2a4f4c;
+  --color-on-surface-variant: #b0c4c2;
+  --color-outline: #4a6b68;
+  --color-outline-variant: #2d4a47;
+  --color-secondary: #f96300;
+  --color-on-secondary: #ffffff;
+
+  --font-headline: "Bona Nova", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(117, 251, 146, 0.15), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(249, 99, 0, 0.1), transparent 40%);
+}
